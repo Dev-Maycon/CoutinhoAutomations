@@ -21,7 +21,7 @@
     margin-bottom: 15px;
   }
 
-  .hero, .benefits, .social-proof, .urgency, .form-section, footer {
+  .hero, .benefits, .social-proof, .urgency, .form-section, footer,.logos {
     padding: 40px 20px;
     max-width: 1200px;
     margin: auto;
@@ -35,6 +35,16 @@
     width: 100%;
     max-width: 400px;
     margin: 20px auto;
+  }
+  .logos {
+    
+    display: flex;
+    max-width: 400px;
+  }
+
+
+  .logos img{
+    width: 48px;
   }
 
   .hero button, .urgency button, .form-section button {
