@@ -4,138 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coutinho Automations - Landing Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #072c3f; /* azul petróleo */
-      color: #f5f5f5;
-      line-height: 1.6;
-    }
-
-    header, footer {
-      text-align: center;
-      padding: 20px;
-    }
-
-    header img {
-      width: 150px;
-      margin-bottom: 15px;
-    }
-
-    .hero, .benefits, .social-proof, .urgency, .form-section, footer {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .hero {
-      text-align: center;
-    }
-
-    .hero img {
-      width: 100%;
-      max-width: 400px;
-      margin: 20px auto;
-    }
-
-    .hero button, .urgency button, .form-section button {
-      background: #219c92;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-
-    .benefits ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .benefits li {
-      margin: 15px 0;
-      font-size: 1.1em;
-      display: flex;
-      align-items: center;
-    }
-
-    .benefits li::before {
-      content: "\2714";
-      color: #219c92;
-      margin-right: 10px;
-    }
-
-    .social-proof .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .card {
-      background: #09485f;
-      padding: 20px;
-      border-radius: 8px;
-      width: 250px;
-      text-align: center;
-    }
-
-    .form-section form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .form-section input {
-      width: 100%;
-      max-width: 400px;
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-    }
-
-    footer p, footer a {
-      color: #aaa;
-      font-size: 0.9em;
-    }
-
-    footer a {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      .social-proof .cards {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .card {
-        width: 80%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Coutinho Automations">
+  <img src="image/logo.png" alt="Coutinho Automations">
 </header>
 
 <section class="hero">
   <h1>Automatize seus processos industriais usando apenas as ferramentas Microsoft</h1>
-  <p>Reduza falhas, ganhe velocidade e elimine o papel com soluções criadas sob medida em Power Automate, Power Apps, SharePoint e Forms.</p>
-  <img src="inspe.png" alt="App de Inspeção">
+  <p>Reduza falhas, ganhe velocidade e elimine o papel com soluções criadas sob medida em Power Automate, SharePoint e Forms.</p>
+  <div class="logos">
+    <img src="image/icons8-microsoft-office-2019-48.png" alt="office business">
+    <img src="image/icons8-microsoft-power-automate-2020-48.png" alt="power Automate">
+    <img src="image/icons8-sharepoint-48.png" alt="SharePoint">
+    <img src="image/icons8-microsoft-forms-2019-48.png" alt="Microsoft Forms">
+    
+  </div>
+  <img src="image/inspe.png" alt="App de Inspeção">
   <button>Solicitar Demonstração Gratuita</button>
 </section>
 
