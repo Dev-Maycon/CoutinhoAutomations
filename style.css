@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #072c3f; /* azul petróleo */
+    color: #f5f5f5;
+    line-height: 1.6;
+  }
+
+  header, footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  header img {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .hero, .benefits, .social-proof, .urgency, .form-section, footer {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .hero button, .urgency button, .form-section button {
+    background: #219c92;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .benefits ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .benefits li {
+    margin: 15px 0;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+  }
+
+  .benefits li::before {
+    content: "\2714";
+    color: #219c92;
+    margin-right: 10px;
+  }
+
+  .social-proof .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: #09485f;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+  }
+
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .form-section input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  footer p, footer a {
+    color: #aaa;
+    font-size: 0.9em;
+  }
+
+  footer a {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .social-proof .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 80%;
+    }
+  }
