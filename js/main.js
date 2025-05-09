@@ -1,20 +1,22 @@
-
 const track = document.getElementById('carouselTrack');
-const slides = track.children;
-let index = 0;
-const totalSlides = slides.length;
+const slides = document.querySelectorAll('.carousel-slide');
+let currentIndex = 0;
+
+function updateSlidePosition() {
+  const slideWidth = slides[0].offsetWidth;
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
 
 function moveSlide(step) {
-  index = (index + step + totalSlides) % totalSlides;
+  currentIndex = (currentIndex + step + slides.length) % slides.length;
   updateSlidePosition();
 }
 
-function updateSlidePosition() {
-  const width = track.clientWidth / totalSlides;
-  track.style.transform = `translateX(-${index * width}px)`;
-}
+// Atualiza o carrossel ao redimensionar a tela
+window.addEventListener('resize', updateSlidePosition);
 
-setInterval(() => moveSlide(1), 5000); // Auto-slide a cada 5s
+// Auto-slide a cada 5s
+setInterval(() => moveSlide(1), 5000);
 
-window.addEventListener('resize', updateSlidePosition); // Responsivo
-
+// Ajusta a posição inicial ao carregar
+window.addEventListener('load', updateSlidePosition);

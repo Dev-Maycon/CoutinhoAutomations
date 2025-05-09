@@ -171,13 +171,13 @@ footer a {
 
 .carousel-track {
   display: flex;
-  width: calc(100% * 3); /* Corrigir para a quantidade de slides */
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
-  width: 100%;
-  flex-shrink: 0;
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .carousel-slide img {
