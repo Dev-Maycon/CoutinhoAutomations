@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coutinho Automations</title>
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
+
+
 <body>
 
 <header>
@@ -22,7 +25,16 @@
     <img src="image/icons8-microsoft-forms-2019-48.png" alt="Microsoft Forms">
     
   </div>
-  <img src="image/inspe.png" alt="App de Inspeção">
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+      <img src="image/inspe.png" alt="App de Inspeção">
+      <img src="image/inspe1.png" alt="Outro App">
+      <img src="image/inspe2.png" alt="Outro Exemplo">
+    </div>
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+  </div>
+  
   <button>Solicitar Demonstração Gratuita</button>
 </section>
 
@@ -68,6 +80,6 @@
   <p>© 2025 Coutinho Automations. Todos os direitos reservados.</p>
   <a href="https://coutinhoautomations.com/politicaPrivacidade.html">Política de Privacidade</a>
 </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>
