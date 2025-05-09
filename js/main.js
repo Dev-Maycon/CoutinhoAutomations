@@ -3,7 +3,7 @@ const slides = document.querySelectorAll('.carousel-slide');
 let currentIndex = 0;
 
 function updateSlidePosition() {
-  const slideWidth = slides[0].offsetWidth;
+  const slideWidth = slides[0].clientWidth;
   track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
@@ -12,11 +12,11 @@ function moveSlide(step) {
   updateSlidePosition();
 }
 
-// Atualiza o carrossel ao redimensionar a tela
+// Ajusta o carrossel ao redimensionar a tela
 window.addEventListener('resize', updateSlidePosition);
 
-// Auto-slide a cada 5s
+// Auto-slide a cada 5 segundos
 setInterval(() => moveSlide(1), 5000);
 
-// Ajusta a posição inicial ao carregar
+// Garante que a posição esteja correta ao carregar
 window.addEventListener('load', updateSlidePosition);
